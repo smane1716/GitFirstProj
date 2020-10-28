@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+
+<head>
+    <script src="angular.min.js"></script>
+    <script src="script2.JS"></script>
+    <link href="style2.css" rel="stylesheet">
+
+
+</head>
+
+<body ng-app="MyModule">
+
+    <div ng-controller="myController">
+        Number of Rows:<input type="number" step="1" min="0" max="5" ng-model="Limitrow">
+        <br></br>
+        <table>
+            <thead>
+                <tr style="padding-left: 30px;">
+                    <th style="padding-right: 40px;">Name</th>
+                    <th style="padding-right: 30px;">Date of Birth</th>
+                    <th style="padding-right: 30px;">Gender</th>
+                    <th style="padding-right: 30px;">Salary</th>
+                    <th style="padding-right: 30px;">Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="ImpData in ImpData|limitTo:Limitrow">
+                    <td>{{ImpData.Name|uppercase}}</td>
+                    <td>{{ImpData.DateofBirth|date:dd/MM/yyyy}}</td>
+                    <td>{{ImpData.Gender}}</td>
+                    <td>{{ImpData.Salary|number:1}}</td>
+                    <td>{{ImpData.Salary|currency:$:1}}</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

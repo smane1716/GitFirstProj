@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    <script src="Script.JS"></script>
+    <link href="Style1.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="MyModule">
+    <div>
+        <p>
+            {{10+20}}
+        </p>
+
+        <p>
+
+        </p>
+    </div>
+    <div ng-controller="myController">
+        <table>
+            <thead>
+                <tr style="padding-left: 30px;">
+                    <th style="padding-right: 40px;">Name</th>
+                    <th style="padding-right: 30px;">Likes</th>
+                    <th style="padding-right: 30px;">Dislikes</th>
+                    <th style="padding-right: 30px;">Like/Dislike</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="Techs in Techs">
+                    <td>{{Techs.Name}}</td>
+                    <td>{{Techs.Likes}}</td>
+                    <td>{{Techs.Dislikes}}</td>
+                    <td>
+                        <input type="button" value="Like" ng-click="AddLikes(Techs)">
+                        <input type="button" value="DisLike" ng-click="AddDislikes(Techs)">
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

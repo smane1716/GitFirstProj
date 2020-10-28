@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    <script src="C:\Users\saikr\Desktop\HTML VSS\Script.JS"></script>
+
+
+    <title>
+        This prints on title
+    </title>
+
+</head>
+
+<body ng-app="MyModule">
+    <h1>
+        <marquee>Below is the PARA P and the one you are reading is a heading</marquee>
+    </h1>
+    <hr width="1000px">
+    <p>
+        <b font="MONSERRAT">This</b> is the starting paragraphThis is the starting paragraphThis is the starting
+        paragraphThis is the starting paragraphThis is the starting paragraphvv
+        <i> is the starting paragraphThis is the starting paragraphvvThis is the starting paragraph
+            <blockquote cite="www.yahoo.com"> is the starting paragraphThis is the starting paragraphThis is the
+                starting paragraphvvThis is the starting paragraph</i>
+        This is the starting paragraphThis is the starting paragraphThis is the starting paragraphvvThis is the starting
+        paragraph</blockquote>
+        This is the starting paragraphThis is the starting paragraphThis is the starting paragraphvvThis is the starting
+        paragraph.
+        <br><br><br>
+        This is the starting paragraphThis is the starting paragraphThis is the starting paragraphvvThis is the starting
+        paragraph
+        <EM>This is the starting paragraphThis is the starting paragraphThis is the starting paragraphvvThis is the
+            starting paragraph</EM>
+        <mark color="Red">This is the starting paragraphThis is the starting paragraphThis is the starting
+            paragraphvvThis is the starting paragraph</mark>
+        <abbr title="This means website">This</abbr> is the starting paragraphThis is the starting paragraphThis is the
+        starting paragraphvvThis is the starting paragraph
+        This is the starting paragraphThis is the starting paragraphThis is the starting paragraphvvThis is the starting
+        paragraph<br>
+    <h2><a href="https://www.yahoo.com" target=_blank>About me</a></h2>
+    </p>
+    <p>email us at <a href="mailto:smane2486@yahoo.com">yahoo</a>
+        <img src="SQL Oprtr.jpg" alt="sql oprtr">
+    </p>
+    <div style="padding-left: 500px;">
+        <h2>
+
+            Types of drinks
+
+        </h2>
+        <li>
+            Beer
+            <ol start="a">
+                <li>
+                    Blue Moon
+                    <dd>
+                        -from belgium
+                    </dd>
+                </li>
+                <li>Corona
+                    <dd>- from mexico</dd>
+                </li>
+                <li>Budweiser
+                    <dd>
+                        - from usa
+                    </dd>
+                </li>
+                <li>Stella Artois
+                    <dd>
+                        -from belgium
+                    </dd>
+                </li>
+                <li>Mikes Hard
+                    <dd>
+                        -from usa
+                    </dd>
+                </li>
+            </ol>
+        </li>
+        <li>
+            Wine
+            <ol start="a">
+                <li>Merlot</li>
+                <li>Cabernet</li>
+                <li>Pinot Noir</li>
+                <li>Pinot Grigio</li>
+            </ol>
+        </li>
+        <li>
+
+            Whisky
+            <ol start="a">
+                <li>Jameson</li>
+                <li>Jack Daniels</li>
+                <li>Chivas</li>
+                <li>Glenlivet</li>
+            </ol>
+        </li>
+
+        </ol>
+    </div>
+    <div style="padding-left: 500px;">
+        <div>
+            <form>
+                name:<br>
+                <input type="text" </form>
+        </div>
+        <div id='formsubmit' class='submit'>
+            <br>
+            <input type="submit" value="submit form" style="text-decoration-color: darkred;">
+        </div>
+        <table border="5">
+            <!-- inserting a table-->
+            <caption>My First Table</caption>
+            <tr>
+                <thead style="color: red;">
+                    <th>heading 1</th>
+                    <th>heading 2</th>
+                    <th>heading 3</th>
+                </thead>
+            </tr>
+            <tr>
+                <td>Column1</td>
+                <td>Column2</td>
+                <td>Column3</td>
+
+            </tr>
+            <tr>
+                <td>Column4</td>
+                <td style="color: lightcoral;">Column5
+                    <table border="1">
+                        <tr>
+                            <td style="color: cyan;">Nest Col 1</td>
+                            <td style="color:darkblue">Nest Col 2</td>
+                        </tr>
+                        <tr>
+                            <td style="color:darkmagenta">Nest Col 3</td>
+                            <td style="color: green;">Nest Col 4</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Column6</td>
+            </tr>
+            <tr>
+                <td>Column7</td>
+                <td>Column8</td>
+                <td>Column9</td>
+            </tr>
+        </table>
+        <div style="padding-left: 500px;">
+            <a href="https://www.wallapapers.com">
+                <img src="myimage.png" usemap="#saimane">
+                <map name="saimane">
+                    <area shape="rect" coords="">
+                </map>
+            </a>
+
+
+        </div>
+    </div>
+    <audio controls>
+        <source src="I Prevail - Alone (Animated Music Video).mp3" type="audio/mpeg"> <!-- inserting audio file-->
+    </audio>
+    <video autoplay muted>
+        <source src="file_example_MP4_480_1_5MG.mp4" type="Video/mp4">
+
+    </video>
+    <div id="firstclick" class="container">
+        <button id="click" onclick="clicked()">slick me</button>
+    </div>
+    <div id="secondclick" class="container2">
+        <p>
+            am practicing the Java Script
+        </p>
+    </div>
+    <div ng-controller="myController" >
+        <p>
+            {{message}}
+        </p>
+           <p>Please Enter you Name below</p>
+           <p>Name:<input type="text" ng-model="Name"></p>
+           <p ng-bind="Name"></p>
+           
+       <p>{{1!=2}}</p>
+
+       <p>{{{Name:'Sai Mane', Age:'30'}.Age}}</p>
+    </div>
+
+    <script>
+
+
+        //var array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        /*console.log(array);
+          for (var ray=0; ray < array.length; ray++)
+          {
+              console.log(array[ray])
+          }
+        let j = 1;
+        while (j < array.length) {
+            console.log(array[j]);
+            j++
+        }*/
+
+        //let dom = document.getElementById('Click');
+        //console.log(dom);
+
+        /*let domClass = document.getElementsByClassName('container');
+        console.log(domClass);
+        domClass[0].style.background = "yellow";
+        domClass[1].style.background="red";*/
+
+
+
+        /*smane = document.getElementsByTagName('div')
+        console.log(smane)
+
+        SaiElement = document.createElement('p');
+        SaiElement.innerText = 'This is the created para'
+        smane[5].appendChild(SaiElement);
+
+        function clicked() {
+            console.log('Click me Was Clicked')
+        }
+        window.onload = function () {
+            console.log("Document was loaded");
+        }
+
+SaiElement.addEventListener('mouseout', function(){
+    console.log("Mouse over on submit");
+})*/
+
+        /*obj = { name: "sai krishna mane", age:35}
+        jobj = JSON.stringify(obj);
+        console.log(typeof jobj)
+        console.log(jobj)*/
+    </script>
+</body>
+
+</html>
