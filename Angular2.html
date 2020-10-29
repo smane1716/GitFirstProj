@@ -35,6 +35,24 @@
 
 
                 </tr>
+                <tr ng-repeat="ImpData in ImpData|limitTo:Limitrow">
+                    <td>{{ImpData.Name|uppercase}}</td>
+                    <td>{{ImpData.DateofBirth|date:dd/MM/yyyy}}</td>
+                    <td>{{ImpData.Gender}}</td>
+                    <td>{{ImpData.Salary|number:1}}</td>
+                    <td>{{ImpData.Salary|currency:$:1}}</td>
+
+
+                </tr>
+                <tr ng-repeat="ImpData in ImpData|limitTo:Limitrow">
+                    <td>{{ImpData.Name|uppercase}}</td>
+                    <td>{{ImpData.DateofBirth|date:dd/MM/yyyy}}</td>
+                    <td>{{ImpData.Gender}}</td>
+                    <td>{{ImpData.Salary|number:1}}</td>
+                    <td>{{ImpData.Salary|currency:$:1}}</td>
+
+
+                </tr>
             </tbody>
         </table>
     </div>
